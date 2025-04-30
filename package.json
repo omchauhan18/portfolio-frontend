@@ -1,0 +1,14 @@
+
+{
+  "name": "portfolio-frontend",
+  "version": "1.0.0",
+  "description": "My Portfolio",
+  "scripts": {
+    "predeploy": "npm run deploy",
+    "deploy": "gh-pages -d ."
+  },
+  "devDependencies": {
+    "gh-pages": "^6.3.0"
+  },
+  "homepage": "https://github.com/omchauhan18/portfolio-frontend"
+}

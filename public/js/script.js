@@ -340,7 +340,7 @@ if (hireModal) {
       const data = { name, email, message };
   
       try {
-        const res = await fetch("http://localhost:3000/contact", {
+        const res = await fetch("https://portfolio-backend-40ii.onrender.com", {
           method: "POST",
           headers: { "Content-Type": "application/json" },
           body: JSON.stringify(data),
@@ -367,7 +367,7 @@ if (hireModal) {
       project: document.getElementById("hireProject").value,
     };
 
-    const res = await fetch("http://localhost:3000/hire", {
+    const res = await fetch("https://portfolio-backend-40ii.onrender.com", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(data),
