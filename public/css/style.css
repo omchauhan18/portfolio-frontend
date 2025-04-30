@@ -1,0 +1,375 @@
+/* Reset & Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #121212;
+    color: #ffffff;
+    line-height: 1.6;
+    overflow-x: hidden;
+  }
+  
+  header {
+    background: #1e1e1e;
+    height: 50px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.6);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+  
+  nav ul {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    list-style: none;
+  }
+  
+  nav ul li {
+    margin: 0 15px;
+  }
+  
+  nav ul li a,
+  .hire-me-button {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: 500;
+    transition: color 0.3s ease;
+  }
+  
+  nav ul li a:hover,
+  .hire-me-button:hover {
+    color: #6c63ff;
+  }
+  
+  .hire-me-button {
+    background-color: transparent;
+    border: 2px solid #6c63ff;
+    color: #6c63ff;
+    padding: 8px 16px;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .hire-me-button:hover {
+    background-color: #6c63ff;
+    color: #fff;
+  }
+  
+  /* Cursor Dot */
+  .cursor-dot {
+    position: fixed;
+    width: 8px;
+    height: 8px;
+    background-color: #6c63ff;
+    border-radius: 50%;
+    pointer-events: none;
+    z-index: 9999;
+    transform: translate(-50%, -50%);
+  }
+  
+  /* Sections */
+  section {
+    padding: 80px 20px;
+    max-width: 1200px;
+    margin: auto;
+  }
+  
+  .intro {
+    text-align: center;
+    padding-bottom: 40px;
+  }
+  
+  .intro h1 {
+    font-size: 3rem;
+    color: #6c63ff;
+  }
+  
+  .para {
+    color: #b3b3b3;
+    max-width: 700px;
+    margin: 20px auto;
+    font-size: 1.1rem;
+  }
+  
+  .typewriter-text {
+    font-size: 1.5rem;
+    color: #ffffff;
+    animation: typing 3s steps(40, end), blink 0.75s step-end infinite;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 2px solid #6c63ff;
+    display: inline-block;
+    width: 22ch;
+  }
+  
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 22ch }
+  }
+  
+  @keyframes blink {
+    50% { border-color: transparent; }
+  }
+  
+  .photo {
+    text-align: center;
+    margin-top: 40px;
+  }
+  
+  .photo img {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid #6c63ff;
+    margin-bottom: 15px;
+  }
+  
+  .photo h2 {
+    font-weight: 500;
+    color: #6c63ff;
+    margin-bottom: 10px;
+  }
+  
+  .photo a {
+    font-size: 1.5rem;
+    color: #ffffff;
+    margin: 0 10px;
+    transition: color 0.3s ease;
+  }
+  
+  .photo a:hover {
+    color: #6c63ff;
+  }
+  
+  /* Cards */
+  .card {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    color: #ffffff;
+    backdrop-filter: blur(10px);
+  }
+  
+  .card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 24px rgba(108, 99, 255, 0.3);
+  }
+  
+  .card-body h5 {
+    color: #6c63ff;
+  }
+  
+  .card-text {
+    color: #b3b3b3;
+  }
+  
+  /* Portfolio, Resume, Blog */
+  #portfolio h2,
+  #resume h2,
+  #blog h2,
+  #contact h2,
+  #about h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #6c63ff;
+    margin-bottom: 40px;
+  }
+  
+  .project {
+    background: #1e1e1e;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(108, 99, 255, 0.2);
+    margin-bottom: 20px;
+  }
+  
+  /* Contact Form */
+  form {
+    max-width: 600px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  form input,
+  form textarea {
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    background-color: #1e1e1e;
+    color: #ffffff;
+    font-size: 1rem;
+    resize: none;
+  }
+  
+  form button {
+    background-color: #6c63ff;
+    color: #fff;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+  }
+  
+  form button:hover {
+    background-color: #5b54e6;
+  }
+  
+  /* Footer */
+  footer {
+    background: #1e1e1e;
+    padding: 20px;
+    text-align: center;
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+  }
+  
+  footer p {
+    color: #999;
+  }
+  
+  .social-media a {
+    margin: 0 10px;
+    color: #6c63ff;
+    text-decoration: none;
+  }
+  
+  .social-media a:hover {
+    color: #ffffff;
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    nav ul {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .typewriter-text {
+      font-size: 1.2rem;
+      width: 18ch;
+    }
+  
+    .intro h1 {
+      font-size: 2.2rem;
+    }
+  
+    .navbar-collapse {
+      display: block; /* ensures collapse behavior */
+    }
+  }
+  
+
+  .accordion {
+    max-width: 600px;
+    margin: auto;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+  }
+  
+  .accordion-item {
+    border-top: 1px solid #ddd;
+  }
+  
+  .accordion-item:first-child {
+    border-top: none;
+  }
+  
+  .accordion-header {
+    width: 100%;
+    padding: 15px 20px;
+    background: #007BFF;
+    color: white;
+    text-align: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .accordion-header:hover {
+    background: #0056b3;
+  }
+  
+  .accordion-content {
+    max-height: 0;
+    overflow: hidden;
+    background: #f9f9f9;
+    padding: 0 20px;
+    transition: max-height 0.3s ease, padding 0.3s ease;
+  }
+  
+  .accordion-content p {
+    margin: 15px 0;
+    font-size: 15px;
+  }
+  
+  /* Responsive design */
+  @media (max-width: 768px) {
+    .accordion {
+      margin: 10px;
+      border-radius: 6px;
+    }
+  
+    .accordion-header {
+      font-size: 15px;
+      padding: 14px 16px;
+    }
+  
+    .accordion-content {
+      padding: 0 16px;
+    }
+  
+    .accordion-content p {
+      font-size: 14px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .accordion-header {
+      font-size: 14px;
+      padding: 12px 14px;
+    }
+  
+    .accordion-content {
+      padding: 0 14px;
+    }
+  
+    .accordion-content p {
+      font-size: 13px;
+    }
+  }
+
+
+.progress{
+  margin-top: 20px;
+}
+
+#hireModalLabel,#form-label,#hireName,#hireCompany,#hireTitle,#hireProject{
+  background-color: #fff !important;
+  color: #000 !important;
+}
+
+/* Light mode (default) */
+.social-icons a {
+  color: #000 !important; /* black or your default color */
+  transition: color 0.3s ease;
+}
+
+/* Dark mode override */
+.dark-mode .social-icons a {
+  color: #fff !important; /* white in dark mode */
+}
